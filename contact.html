@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact</title>
+    <style>
+        body{
+            margin: 0px;
+            padding: 0px;
+            background-image: url(./images/mars\ astro.jpg);
+            background-repeat: repeat;
+            background-position: center;
+            background-size:cover ;
+            background-attachment:fixed ;
+            justify-content: center;
+            align-items: center;
+            display: flex;
+            height: 100vh;
+        }
+        .container {
+            max-width: 600px;
+            width: 90%;
+            padding: 20px;
+            background-color: #fff;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+        h1 {
+            color: #d04e4e;
+            text-align: center;
+        }
+        p {
+            text-align: center;
+        }
+        form {
+            display: flex;
+            flex-direction: column;
+        }
+        label {
+            margin: 10px 0 5px;
+            font-weight: bold;
+        }
+        input, textarea {
+            padding: 10px;
+            font-size: 1em;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+            width: 100%;
+        }
+        textarea {
+            resize: vertical;
+            min-height: 100px;
+        }
+        button {
+            margin-top: 15px;
+            padding: 10px;
+            background-color: #d04e4e;
+            color: #fff;
+            border: none;
+            font-size: 1em;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+        button:hover {
+            background-color: #b84242;
+        }
+        .contact-info {
+            margin-top: 20px;
+            font-size: 0.9em;
+            text-align: center;
+            color: #666;
+        }
+        .social{
+            vertical-align: bottom;
+        }
+        .imga{
+            width: 30px;
+            padding: 20px;
+            vertical-align:middle;
+        }
+    </style>
+</head>
+<body>
+    
+    <div class="container">
+        
+        <h1>Contact Us</h1>
+        <p>We’d love to hear from you! Reach out with questions, feedback, or just to say hello.</p>
+    
+        <form action="#" method="post">
+            <label for="name">Name</label>
+            <input type="text" id="name" name="name" placeholder="Your name" required>
+    
+            <label for="email">Email</label>
+            <input type="email" id="email" name="email" placeholder="Your email" required>
+    
+            <label for="subject">Subject</label>
+            <input type="text" id="subject" name="subject" placeholder="Subject" required>
+    
+            <label for="message">Message</label>
+            <textarea id="message" name="message" placeholder="Your message here..." required></textarea>
+    
+            <button type="submit">Send Message</button>
+        </form>
+    
+        <div class="contact-info">
+            <p><strong>Email:</strong> contactlpu@exploremars.com</p>
+            <p><strong>Phone:</strong> + 04651 256663</p>
+            <p><strong>Address:</strong>  961 Space Lane, Marsville, Punjab</p>
+            <div class="social">
+               <a href="https://www.instagram.com/isro.dos/"> <img  class="imga" src="./images/insta.jpg" alt=""> </a>
+                <a href="https://www.youtube.com/@isroofficial5866"> <img class="imga" src="./images/youtube.png" alt=""> </a>
+                <a href="https://x.com/isro">  <img class="imga" src="./images/twitter.jpg" alt=""> </a>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
