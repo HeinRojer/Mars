@@ -17,8 +17,84 @@
         }
         .video{
             margin-top: 100px;
-            
         }
+        .nasa{
+          
+          width: 280px;
+          height: 400px;
+          display: inline-block;
+          padding: 10px;
+          vertical-align: middle;
+          margin: 0px;
+          padding-top: 10px;
+          transition: 0.4s;
+          border-radius: 20px;
+          
+
+        }
+        .nasa:hover{
+          padding: 12px;
+        }
+        .newsMars{
+          object-fit: cover;
+          display: flex;
+          margin: 0px;
+          padding: 0px;
+          margin-top: 30px;
+        }
+        .imgggg{
+
+        }
+        .newsMars2{
+          object-fit: cover;
+          display: flex;
+          margin: 0px;
+          padding: 10 20px;
+          /* padding-top: 6px;
+          padding-right: ; */
+          
+        }
+        .textOverlay{
+          position: absolute;
+          bottom: 10%;
+          left: 50%;
+          transform: translate(-50%, -50%);
+          color: white;
+          font-size: 24px;
+          font-weight: bold;
+          text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.6);
+          opacity: 0; 
+          transition: opacity 0.3s ease; 
+        }
+        .image-container{
+          position: relative;
+           width: 300px;
+        }
+        .image-container:hover .textOverlay {
+    opacity: 1;
+}
+.para{
+  padding: 0px;
+  margin: 0px;
+}
+.intropara{
+  margin: 100px;
+  padding-top: 30px;
+  font-style:italic;
+  font-size: 20px;
+}
+.more{
+  margin: 50px;
+  font-size: 45px;
+}
+.foot{
+  background-color: black;
+  color: white;
+  padding: 3px;
+  margin-top: 110px;
+  margin-bottom: 0px;
+  padding-bottom :0px; ;
+}
     </style>
     <script src="./script.js"></script>
 </head>
@@ -44,12 +120,71 @@
             </ol>
         </header>
         <main>
-            <h1 class="heading1">Humans live on Mars <br>is it possible?</h1>
+            <h1 class="heading1">Explore Mars: Your Ultimate Guide to the Red Planet</h1>
             <p class="para1">🌠 Life on Mars: The Ultimate Human Adventure! 🚀 Imagine a world where humans thrive beyond Earth, building communities on the Red Planet. But is it truly possible? Dive into the groundbreaking science, mind-bending challenges, and daring visions that could turn Mars into our next home. Are we ready to take the leap into a cosmic future? Let’s explore!"</p>
         </main>  
         
         <div class="video">
-           <center> <video  width="640" height="360" controls src="./images/marsvideo.mp4"   controls autoplay muted></video></center>
+           <center> <video  width="800px" height="500px" controls src="./images/marsvideo.mp4"   controls autoplay muted></video></center>
+        </div>
+
+        <h1 class="more"> Topics</h1>
+        <div class="newsMars">
+       
+          <div class="image-container">
+          <a href="https://www.nasa.gov/nasa-missions/"><img class="nasa" src="./images/Mission NASA.jpg" alt="Mission"></a> 
+          <div class="textOverlay">
+          <p>Missions</p>
+          </div>
+        </div>
+        <div class="image-container">
+          <a href="https://www.nasa.gov/humans-in-space/"><img class="nasa" src="./images/humansinspace.jpg" alt="Mission"></a> 
+          <div class="textOverlay">
+          <p>HumanINSpace</p>
+          </div>
+        </div>
+        <div class="image-container">
+          <a href="https://science.nasa.gov/climate-change/"><img class="nasa" src="./images/climatechange from space.jpg" alt="Mission"></a> 
+          <div class="textOverlay">
+          <p class="para">ClimateChange</p>
+          </div>
+        </div>
+        <div class="image-container">
+          <a href="https://science.nasa.gov/solar-system/"><img class="nasa" src="./images/Solarsystem.jpg" alt="Mission"></a> 
+          <div class="textOverlay">
+          <p>Solarsystem</p>
+          </div>
+        </div>
+        </div>
+        <div class="newsMars2">
+          <div class="image-container">
+            <a href="https://science.nasa.gov/universe/"> <img class="nasa" src="./images/galaxy.jpg" alt="Mission"></a>
+            <div class="textOverlay">
+            <p class="para">Universe</p>
+            </div>
+          </div>
+          <div class="image-container">
+            <a href="https://science.nasa.gov/science-news/"><img class="nasa" src="./images/spacescience.jpg" alt="Mission"></a>
+            <div class="textOverlay">
+            <p class="para">ScienceNews</p>
+            </div>
+          </div>
+          <div class="image-container">
+            <a href="https://www.nasa.gov/aeronautics/"><img class="nasa" src="./images/Aeronatics.jpg" alt="Mission"></a>
+            <div class="textOverlay">
+            <p class="para">Aeronatics</p>
+            </div>
+          </div>
+          <div class="image-container">
+            <a href="https://www.nasa.gov/technology/"><img class="nasa" src="./images/techonology.jpg" alt="Mission"></a>
+            <div class="textOverlay">
+            <p class="para">Techonology</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="intropara">
+          <p>Humanity’s aim toward Mars is driven by scientific curiosity, survival aspirations, and the pursuit of technological breakthroughs. Mars holds clues to understanding potential extraterrestrial life, Earth’s history, and the feasibility of human colonization. Establishing a presence on Mars could ensure humanity’s survival in the face of planetary threats, while also pushing advancements in fields like propulsion, life support, and energy. Organizations like NASA and SpaceX are actively working to make human Mars missions a reality, seeing Mars as a stepping stone to becoming a multi-planetary species and sparking inspiration and unity through the vast possibilities of space exploration.</p>
         </div>
 
         <center> <div class="tab">
@@ -314,11 +449,14 @@
                   <td></td>
                 </tr>
               </table>
-              
+              <footer class="foot">
+                <h5>Rojer Hein &#169;</h5>
+              </footer>
               
         </div>
     </center> 
     </div>  
+   
 
 </body>
 
