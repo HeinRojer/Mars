@@ -6,36 +6,64 @@
     <title>info</title>
     <link rel="stylesheet" href="./style.css">
     <style>
-        
         body{
-            background-image:url(./images/stars.jpg);
+            background-image: url(./images/Nebula\ Swirl.jpg);
             background-repeat: repeat;
             background-size:cover ;
             background-position:center ;
             padding-bottom: 100px;
         }
        .but{
-        height: 30px;
-        width: 60px;
+        height: 20px;
+        width: 80px;
         color: white;
-        background-color: rgb(81, 81, 239);
+        background-color: #d04e4e;
+        border: none;
+        border-radius: 5px;
+        cursor: pointer;
+        margin-bottom: 150px;
+        transition: 0.5s;
        }
+       .but:hover{
+        background-color: #852121;
+        color: black;
+        font-size:16px;
+        
+       }
+       /* .but:active{
+       color: white;
+       background-color: black;
+      
+       } */
     </style>
+    <script>
+        function newsletter(){
+            // console.log("You Have Successfully Subscribed To Our Newsletter")
+            alert("You Have Successfully Subscribed To Our Newsletter")
+
+        }
+    </script>
+    <script src="./script.js"></script>
 </head>
 <body>
     <div class="container">
         <header>
-            <a href="#">Mars</a>
+            <a href="./index.html">Mars</a>
             <ol>
-                <li class="pap"><a href="./index.html">Home</a></li>
-                <li class="pap"><a href="./info.html">Info</a></li>
-                <li class="pap"><a href="./about.html">About</a></li>
-                <li class="pap"><a href="./projects.html">Projects</a></li>
-                <li class="pap"><a href="launch.html">Launch Schedule</a></li>
-                <li class="pap"><a href="./contact.html">Contact</a></li>
+                <button class="pap" onclick="home()">HOME</button>
+                <!-- <li class="pap"><a href="./index.html">Home</a></li> -->
+                 <button class="pap" onclick="info()">INFO</button>
+                <!-- <li class="pap"><a href="./info.html">Info</a></li> -->
+                <button class="pap" onclick="about()">ABOUT</button>
+                <!-- <li class="pap"><a href="./about.html">About</a></li> -->
+                <button class="pap" onclick="project()">PROJECT</button>
+                <!-- <li class="pap"><a href="./projects.html">Projects</a></li> -->
+                <button class="pap" onclick="launch()">LAUNCH</button>
+                <!-- <li class="pap"><a href="launch.html">Launch Schedule</a></li> -->
+                <button class="pap" onclick="contact()">CONTACT</button>
+                <!-- <li class="pap"><a href="./contact.html">Contact</a></li> -->
             </ol>
         </header>
-
         <center><h2 style="color: lightcyan;">Welcome to Discover Mars!</h2></center>
         <p>
             
@@ -50,10 +78,10 @@ Mars, the fourth planet from the Sun, has long fascinated astronomers, scientist
         <h2>Our Mission</h2>
         <p>
             Our goal is to provide up-to-date information, educational resources, and interactive experiences to help you understand the mysteries of Mars. We cover everything from its geography and atmosphere to the latest missions and discoveries by space agencies like NASA, ESA, and more.</p>
-            <br><h2>What You’ll Find Here</h2>
+            <br><h2>What You&#39;ll Find Here</h2>
             <p>
                 <ul></ul>
-                    <li>Mars Basics: Learn about Mars’ size, atmosphere, temperature, and geology.</li>
+                    <li>Mars Basics: Learn about Mars&#39; size, atmosphere, temperature, and geology.</li>
 <li>Exploration History: Dive into the timeline of Mars exploration, from early telescopic observations to the latest robotic missions.</li>
 <li>Missions to Mars: Get details on past, current, and upcoming missions, including the Perseverance Rover, the Ingenuity helicopter, and plans for human exploration.
     <li>Mars in Culture: Discover how Mars has influenced literature, movies, and art over the years.</li>
@@ -65,7 +93,7 @@ Mars, the fourth planet from the Sun, has long fascinated astronomers, scientist
         <p>
             
 Stay updated with our Mars Blog, participate in community discussions, and follow live mission updates. Sign up for our newsletter to receive the latest discoveries, educational content, and Mars news.
-<button class="but"> join</button>
+<button class="but" onclick="newsletter()"> join</button>
         </p>
         <p>
 
