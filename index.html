@@ -5,9 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Mars</title>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
-        integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w=="
-        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
     <link rel="stylesheet" href="style.css">
     <style>
         .tab{
@@ -29,8 +27,6 @@
           padding-top: 10px;
           transition: 0.4s;
           border-radius: 20px;
-          
-
         }
         .nasa:hover{
           padding: 12px;
@@ -64,11 +60,11 @@
           font-weight: bold;
           text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.6);
           opacity: 0; 
-          transition: opacity 0.3s ease; 
+          transition: opacity 0.3s; 
         }
         .image-container{
           position: relative;
-           width: 300px;
+          width: 300px;
         }
         .image-container:hover .textOverlay {
     opacity: 1;
@@ -95,6 +91,15 @@
   margin-bottom: 0px;
   padding-bottom :0px; ;
 }
+.quote{
+  padding-top: 100px;
+  color: black;
+  font-weight: bold;
+  transition: 2s;
+}
+.quote:hover{
+  color: rgb(255, 255, 255);
+}
     </style>
     <script src="./script.js"></script>
 </head>
@@ -103,7 +108,7 @@
     <img src="images/mars.png" alt="Mars" class="mars">
     <div class="container">
         <header>
-            <a href="#">Mars</a>
+            <a href="./index.html">Mars</a>
             <ol>
                 <button class="pap" onclick="home()">HOME</button>
                 <!-- <li class="pap"><a href="./index.html">Home</a></li> -->
@@ -184,7 +189,7 @@
         </div>
 
         <div class="intropara">
-          <p>Humanity’s aim toward Mars is driven by scientific curiosity, survival aspirations, and the pursuit of technological breakthroughs. Mars holds clues to understanding potential extraterrestrial life, Earth’s history, and the feasibility of human colonization. Establishing a presence on Mars could ensure humanity’s survival in the face of planetary threats, while also pushing advancements in fields like propulsion, life support, and energy. Organizations like NASA and SpaceX are actively working to make human Mars missions a reality, seeing Mars as a stepping stone to becoming a multi-planetary species and sparking inspiration and unity through the vast possibilities of space exploration.</p>
+          <p>Humanity&#39;s aim toward Mars is driven by scientific curiosity, survival aspirations, and the pursuit of technological breakthroughs. Mars holds clues to understanding potential extraterrestrial life, Earth&#39;s history, and the feasibility of human colonization. Establishing a presence on Mars could ensure humanity&#39;s survival in the face of planetary threats, while also pushing advancements in fields like propulsion, life support, and energy. Organizations like NASA and SpaceX are actively working to make human Mars missions a reality, seeing Mars as a stepping stone to becoming a multi-planetary species and sparking inspiration and unity through the vast possibilities of space exploration.</p>
         </div>
 
         <center> <div class="tab">
@@ -449,6 +454,10 @@
                   <td></td>
                 </tr>
               </table>
+              <p > 
+                <blockquote class="quote">   "Mars is not just a destination; it is the next chapter of humanity's story."<br>
+                                                 <cite> — Elon Musk</cite> </blockquote>
+              </p>
               <footer class="foot">
                 <h5>Rojer Hein &#169;</h5>
               </footer>
