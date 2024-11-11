@@ -1,11 +1,8 @@
 @import url('https://fonts.googleapis.com/css2?family=Nunito:wght@300;400;600;700&display=swap');
-*, *::after, *::before {
+*{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-}
-html {
-    scroll-behavior: smooth;
 }
 div{
     overflow: auto;
@@ -21,21 +18,21 @@ div{
     padding-top:2% ;
 }
 ol {
-    list-style-type: none;
+    
     display: flex;
 }
 .pap{
-    font-weight: 600;
-    padding: 0 20px;
-    opacity: 0.6;  
-    padding: 0 20px;
+    opacity: 0.6;
+    padding: 0 15px;
     margin: 5px;
-    
+    border: none;
+    border-radius: 3px;
+    font-size:medium;
 }
 .pap:hover{
     background-color: rgba(252, 252, 252, 0.461);
     color: #3D5300;
-    padding: 0 25px;
+    padding: 0 20px;
     border-radius: 5px;
 
 }
@@ -45,10 +42,7 @@ body {
     overflow: hidden;
     background-color: black;
 }
-a {
-    text-decoration: none;
-    color: white;
-}
+
 .container {
     position: relative;
     max-width: 1200px;
@@ -63,4 +57,8 @@ header {
     justify-content: space-between;
     align-items: center;
     padding: 50px 0;
+}
+a{
+    color: white;
+    text-decoration: none;
 }
