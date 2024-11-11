@@ -6,7 +6,7 @@
     <title>Launch Schedule for Mars | Explore Mars</title>
     <style>
         body {
-            background-image: url();
+            background-image: url(./images/Mars-strom.jpg);
             font-family: Arial, sans-serif;
             margin: 0;
             padding: 0;
@@ -15,6 +15,7 @@
             justify-content: center;
             align-items: center;
             min-height: 100vh;
+            /* background-repeat:no-repeat ; */
         }
         .container {
             max-width: 800px;
@@ -34,16 +35,21 @@
             border-radius: 8px;
             background-color: #fafafa;
         }
-        .mission h2 {
+        h2 {
             margin: 0;
             color: #333;
         }
-        .mission p {
+        p {
             margin: 5px 0;
         }
         .status {
+            font-weight: normal;
+            color: #9e1414;
+            /* font-style:italic; */
+        }
+        .status:hover{
+            font-style:bold;
             font-weight: bold;
-            color: #d04e4e;
         }
     </style>
 </head>
@@ -69,7 +75,7 @@
     <div class="mission">
         <h2>Mission: ExoMars Rosalind Franklin Rover (ESA)</h2>
         <p><strong>Launch Date:</strong> TBA (Projected 2028)</p>
-        <p><strong>Objective:</strong> Explore Mars’s surface and search for signs of life, with an enhanced focus on ancient Martian biosignatures.</p>
+        <p><strong>Objective:</strong> Explore Mars&#39;s surface and search for signs of life, with an enhanced focus on ancient Martian biosignatures.</p>
         <p><strong>Status:</strong> <span class="status">Planned</span></p>
     </div>
 
